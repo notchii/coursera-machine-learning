@@ -13,9 +13,17 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
+%% 
+temp = X * theta - y;
+J = ( temp' * temp ) / (2 * m);
 
+%% My first answer (Using while loop)
 
-
+%i = 1;
+%while i <= m,
+%    J = J + ((X(i,:) * theta - y(i,1))^2) / (2*m);
+%    i++;
+%end;
 
 % =========================================================================
 
